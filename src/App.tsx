@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
+import TruncateCell from './components/truncateCell';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <div style={{ width: '100%' }}>
+                { new Array(1000).fill(1).map(el => {
+                    return (
+                        <>
+                            <TruncateCell
+                                key={el}
+                                children={'feature/create-new-text-ellipsis-component-TC2018.02'}
+                                tailLength={5}
+                                title={'feature/create-new-text-ellipsis-component-TC2018.02'}
+                                className={'toto'}
+                            />
+                            <TruncateCell
+                                key={el}
+                                tailLength={5}
+                                title={'feature/create'}
+                                className={'toto'}
+                            >
+                                feature/create
+                            </TruncateCell>
+                        </>
+                    )
+                })}
+            </div>
+        </div>
+    );
 }
 
 export default App;
