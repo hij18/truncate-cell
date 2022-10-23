@@ -1,6 +1,10 @@
-***Trucate Cell***
+***Truncate Cell***
 
-Contain components Trucate Cell with simple example of usage.
+Contain components Truncate Cell with simple example of usage.
+
+Page with exampe: https://hij18.github.io/truncate-cell/build/
+
+Origin components here: [https://github.com/hij18/truncate-cell/tree/master/src/components/truncateCell](/src/components/truncateCell)
 
 ## Available Scripts
 
@@ -23,4 +27,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
